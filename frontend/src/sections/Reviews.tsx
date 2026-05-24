@@ -32,9 +32,6 @@ const Reviews = (): React.ReactElement => {
     try {
       const data: ApiResponse = await checkAuth();
       if (isMounted.current && data.success && data.user) {
-        console.log('User data from API:', data.user);
-      console.log('User _id:', data.user._id);
-      console.log('User id:', data.user.id);
         setUser(data.user);
       }
     } catch (error) {

@@ -23,10 +23,6 @@ const Comment = ({
   const loggedInUserId = currentUserId?.toString();
   const isOwner = loggedInUserId && commentOwnerId && loggedInUserId === commentOwnerId;
 
-  console.log('Comment owner ID (string):', commentOwnerId);
-  console.log('Logged in user ID (string):', loggedInUserId);
-  console.log('Match?', isOwner);
-
   // Only show buttons if owner
   const showButtons = isOwner;
 
