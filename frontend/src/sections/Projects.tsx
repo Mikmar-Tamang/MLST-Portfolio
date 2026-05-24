@@ -13,7 +13,7 @@ function Projects() {
         </div>
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-xl font-bold text-black mb-2">Project Two</h2>
-          <img src="/project-two.png" alt="Project Two screenshot" className="w-full h-48 object-cover mb-4 rounded" />
+          <img src="" alt="Project Two screenshot" className="w-full h-48 object-cover mb-4 rounded" />
           <p className="text-gray-500">A brief description of Project Two.</p>
         </div>
       </div>
