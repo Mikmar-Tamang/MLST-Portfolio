@@ -76,15 +76,6 @@ const Reviews = (): React.ReactElement => {
     }
   };
 
-  // const handleLogout = async (): Promise<void> => {
-  //   try {
-  //     await logout();
-  //     setUser(null);
-  //   } catch (error) {
-  //     console.error('Logout failed:', error);
-  //   }
-  // };
-
   const handleCommentClick = (): void => {
     if (!user) {
       // Store the current comment text before showing modal
