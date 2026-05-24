@@ -12,7 +12,7 @@ const app = express();
 
 app.use(cors({
   origin: 'http://localhost:5173',
-  origin: 'https://mlst-portfolio-1f81tg6nh-mikmar-tamangs-projects.vercel.app',
+  origin: process.env.FRONTEND_URL,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization','cookie']
