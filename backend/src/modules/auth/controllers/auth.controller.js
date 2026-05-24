@@ -18,7 +18,7 @@ const googleLogin = async (req, res) => {
 
     res.cookie('authToken', sessionToken, {
       httpOnly: true,
-      secure: false,
+      secure: true,
       sameSite: 'none',
       maxAge: 7 * 24 * 60 * 60 * 1000,
       path: '/'
@@ -93,7 +93,7 @@ const verifySession = async (req, res) => {
 const logout = (req, res) => {
   res.clearCookie('authToken', {
     httpOnly: true,
-    secure: false,
+    secure: true,
     sameSite: 'none',
     path: '/'
   });
