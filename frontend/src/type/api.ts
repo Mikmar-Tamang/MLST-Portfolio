@@ -9,6 +9,7 @@ const api: AxiosInstance = axios.create({
     'Content-Type': 'application/json',
   },
 });
+console.log(import.meta.env.VITE_API_URL);
 
 export const googleLogin = async (token: string): Promise<ApiResponse> => {
   const response = await api.post<ApiResponse>('/auth/google', { token });
