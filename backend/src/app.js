@@ -15,7 +15,7 @@ app.use(cors({
   origin: 'https://mlst-portfolio-1f81tg6nh-mikmar-tamangs-projects.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization','cookie']
 }));
 
 // Middleware
