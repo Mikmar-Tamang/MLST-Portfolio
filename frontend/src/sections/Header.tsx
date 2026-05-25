@@ -10,7 +10,7 @@ function Header() {
  }
 
   return (
-    <div className="h-16 bg-slate-800 px-10 flex justify-between items-center py-5">
+    <div className=" sticky top-0 z-50 h-16 bg-slate-800 px-10 flex justify-between items-center py-5">
       <h1 className="font-bold">MLST.</h1>
 
       <button onClick={handleOpen}>
