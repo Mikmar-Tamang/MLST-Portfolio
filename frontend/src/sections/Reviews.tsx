@@ -138,7 +138,7 @@ const Reviews = (): React.ReactElement => {
   }, []);
 
   return (
-    <div>
+    <section id="reviews" className="min-h-screen py-16 px-5">
       <div className="max-w-4xl pt-16 mx-auto px-6">
         {/* Header */}
         <div className="bg-white rounded-lg shadow p-6 mb-8">
@@ -209,7 +209,7 @@ const Reviews = (): React.ReactElement => {
           onSuccess={handleGoogleSuccess}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

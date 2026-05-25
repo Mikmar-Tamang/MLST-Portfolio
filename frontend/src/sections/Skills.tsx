@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <section className="text-black px-4 py-16 max-w-6xl mx-auto">
+    <section id="skills" className="text-black px-4 py-16 max-w-6xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl text-white font-bold mb-2">My Skills</h2>
         <p className="text-blue-400">Technologies I work with</p>

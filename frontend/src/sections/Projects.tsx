@@ -2,7 +2,7 @@ import foodWagon from '../assets/images/foodWagon.png'
 
 function Projects() {
   return (
-    <section className="px-5 py-16 min-h-screen">
+    <section id="projects" className="px-5 py-16 min-h-screen">
       <h1 className="text-2xl font-bold mb-4 text-center">Projects</h1>
       <p className="text-blue-500 mb-6">Here are some of the projects I've worked on:</p>
       <div className="grid md:grid-cols-2 mt-10 gap-6">

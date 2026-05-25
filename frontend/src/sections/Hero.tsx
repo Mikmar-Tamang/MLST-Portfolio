@@ -2,14 +2,14 @@
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center mt-20 min-h-screen p-3">
+    <section id="hero" className="flex flex-col items-center mt-20 min-h-screen p-3">
       <div className="w-48 h-48 rounded-full object-cover bg-white"></div>
       <div className="flex flex-col items-center px-5">
         <h1 className="text-2xl font-bold">Mikmar Lyal Singh Tamang</h1>
         <h2 className="text-lg text-[#FF6208] font-bold mb-10">Mern Stack Developer</h2>
         <p className="text-gray-500">Hello i'm a <span className="font-bold">full-stack developer</span> specializing in <span className="font-bold">MERN stack</span> and modern web technologies.</p>
       </div>
-    </div>
+    </section>
   )
 }
 
