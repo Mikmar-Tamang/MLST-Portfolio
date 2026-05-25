@@ -18,13 +18,13 @@ function Header() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-16 right-0 w-40 bg-blue-400 rounded-md flex font-bold flex-col px-5 py-5">
-          <a href="#hero" className="text-gray-800 mb-2 border-b border-gray-900">Home</a>
-          <a href="#skills" className="text-gray-800 mb-2 border-b border-gray-900">Skill</a>
-          <a href="#projects" className="text-gray-800 mb-2 border-b border-gray-900">Project</a>
-          <a href="#about" className="text-gray-800 mb-2 border-b border-gray-900">About</a>
-          <a href="#reviews" className="text-gray-800 mb-2 border-b border-gray-900">Review</a>
-          <a href="#footer" className="text-gray-800 mb-2 border-b border-gray-900">Contact</a>
+        <div className="absolute top-16 right-0 w-40 bg-white rounded-md flex font-bold flex-col px-5 py-5">
+          <a href="#hero" className="text-gray-800 mb-2">Home</a>
+          <a href="#skills" className="text-gray-800 mb-2">Skill</a>
+          <a href="#projects" className="text-gray-800 mb-2">Project</a>
+          <a href="#about" className="text-gray-800 mb-2 ">About</a>
+          <a href="#reviews" className="text-gray-800 mb-2 ">Review</a>
+          <a href="#footer" className="text-gray-800 mb-2 ">Contact</a>
         </div>
       )}
 
