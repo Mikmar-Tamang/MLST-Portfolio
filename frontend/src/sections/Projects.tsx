@@ -8,12 +8,16 @@ function Projects() {
       <div className="grid md:grid-cols-2 mt-10 gap-6">
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-xl font-bold text-black mb-2">Food wagon</h2>
-          <img src={foodWagon} alt="Food wagon project screenshot" className="w-full h-48 object-cover mb-4 rounded" />
+          <a href="https://food-delivery-sand-one.vercel.app/">
+            <img src={foodWagon} alt="Food wagon project screenshot" className="w-full h-48 object-cover mb-4 rounded" />
+          </a>
           <p className="text-gray-500">A brief description of the Food wagon project.It is a simple web application for people to order food online.</p>
         </div>
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-xl font-bold text-black mb-2">Project Two</h2>
-          <img src="" alt="Project Two screenshot" className="w-full h-48 object-cover mb-4 rounded" />
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="" alt="Project Two screenshot" className="w-full h-48 object-cover mb-4 rounded" />
+          </a>
           <p className="text-gray-500">A brief description of Project Two.</p>
         </div>
       </div>
