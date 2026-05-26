@@ -25,7 +25,7 @@ function Header() {
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 50 }}
         transition={{ duration: 0.6 }}
-         className="absolute top-16 right-0 w-[25%] rounded-md flex font-bold flex-col items-end px-2 py-5">
+         className="absolute top-16 right-0 w-48 rounded-md flex font-bold flex-col items-end px-2 py-5">
           <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
