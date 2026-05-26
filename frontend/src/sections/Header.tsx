@@ -19,12 +19,12 @@ function Header() {
 
       {isOpen && (
         <div className="absolute top-16 right-0 w-[25%] rounded-md flex font-bold flex-col items-end px-2 py-5">
-          <a href="#hero" className=" bg-orange-600 text-center w-full rounded-2xl  mb-2">Home</a>
-          <a href="#skills" className=" bg-orange-600 text-center w-full rounded-2xl mb-2">Skill</a>
-          <a href="#projects" className="bg-orange-600 text-center w-full rounded-2xl mb-2">Project</a>
-          <a href="#about" className="bg-orange-600 text-center w-full rounded-2xl mb-2 ">About</a>
-          <a href="#reviews" className="bg-orange-600 text-center w-full rounded-2xl mb-2 ">Review</a>
-          <a href="#footer" className="bg-orange-600 text-center w-full rounded-2xl mb-2 ">Contact</a>
+          <a href="#hero" className=" bg-orange-600 text-center h-10 w-full rounded-2xl  mb-2">Home</a>
+          <a href="#skills" className=" bg-orange-600 text-center h-10 w-full rounded-2xl mb-2">Skill</a>
+          <a href="#projects" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2">Project</a>
+          <a href="#about" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2 ">About</a>
+          <a href="#reviews" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2 ">Review</a>
+          <a href="#footer" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2 ">Contact</a>
         </div>
       )}
 
