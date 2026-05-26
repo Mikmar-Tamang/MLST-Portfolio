@@ -24,54 +24,62 @@ function Header() {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 50 }}
+        transition={{ duration: 0.6 }}
          className="absolute top-16 right-0 w-[25%] rounded-md flex font-bold flex-col items-end px-2 py-5">
           <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           exit={{x: 100, opacity: 0}}
+          transition={{ delay: 0, duration: 0.8 }}
           onClick={handleOpen}
+          
            className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
-            <a href="#hero">Home</a>
+            <a className="w-full text-center" href="#hero">Home</a>
           </motion.div>
         <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           exit={{x: 100, opacity: 0}}
+          transition={{ delay: 0.1, duration: 0.8 }}
           onClick={handleOpen}
            className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
-          <a href="#skills">Skill</a>
+          <a className="w-full text-center" href="#skills">Skill</a>
          </motion.div>
          <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           exit={{x: 100, opacity: 0}}
+          transition={{ delay: 0.2, duration: 0.8 }}
           onClick={handleOpen}
            className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
-           <a href="#projects">Project</a>
+           <a className="w-full text-center" href="#projects">Project</a>
          </motion.div>
          <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           exit={{x: 100, opacity: 0}}
+          transition={{ delay: 0.3, duration: 0.8 }}
           onClick={handleOpen}
            className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
-          <a href="#about">About</a>
+          <a className="w-full text-center" href="#about">About</a>
          </motion.div>
          <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           exit={{x: 100, opacity: 0}}
+          transition={{ delay: 0.4, duration: 0.8 }}
           onClick={handleOpen}
            className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
-          <a href="#reviews">Review</a>
+          <a className="w-full text-center" href="#reviews">Review</a>
          </motion.div>
          <motion.div
           initial={{x:100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           exit={{x: 100, opacity: 0}}
+          transition={{ delay: 0.5, duration: 0.8 }}
           onClick={handleOpen}
            className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
-          <a href="#footer" >Contact</a>
+          <a className="w-full text-center" href="#footer">Contact</a>
           </motion.div>
         </motion.div>
       )}
