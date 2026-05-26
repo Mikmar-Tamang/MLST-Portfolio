@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import menu from '../assets/images/menus.png'
 import cross from '../assets/images/close.png'
+import {motion, AnimatePresence} from 'framer-motion'
 
 function Header() {
  const [isOpen, setIsOpen] = useState(false)
@@ -17,16 +18,64 @@ function Header() {
         <img className='h-5' src={isOpen ? cross : menu} alt={isOpen ? "Cross" : "Menu"} />
       </button>
 
+    <AnimatePresence>
       {isOpen && (
-        <div className="absolute top-16 right-0 w-[25%] rounded-md flex font-bold flex-col items-end px-2 py-5">
-          <a href="#hero" className=" bg-orange-600 text-center h-10 w-full rounded-2xl  mb-2">Home</a>
-          <a href="#skills" className=" bg-orange-600 text-center h-10 w-full rounded-2xl mb-2">Skill</a>
-          <a href="#projects" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2">Project</a>
-          <a href="#about" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2 ">About</a>
-          <a href="#reviews" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2 ">Review</a>
-          <a href="#footer" className="bg-orange-600 text-center h-10 w-full rounded-2xl mb-2 ">Contact</a>
-        </div>
+        <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 50 }}
+         className="absolute top-16 right-0 w-[25%] rounded-md flex font-bold flex-col items-end px-2 py-5">
+          <motion.div
+          initial={{x:100, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          exit={{x: 100, opacity: 0}}
+          onClick={handleOpen}
+           className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
+            <a href="#hero">Home</a>
+          </motion.div>
+        <motion.div
+          initial={{x:100, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          exit={{x: 100, opacity: 0}}
+          onClick={handleOpen}
+           className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
+          <a href="#skills">Skill</a>
+         </motion.div>
+         <motion.div
+          initial={{x:100, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          exit={{x: 100, opacity: 0}}
+          onClick={handleOpen}
+           className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
+           <a href="#projects">Project</a>
+         </motion.div>
+         <motion.div
+          initial={{x:100, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          exit={{x: 100, opacity: 0}}
+          onClick={handleOpen}
+           className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
+          <a href="#about">About</a>
+         </motion.div>
+         <motion.div
+          initial={{x:100, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          exit={{x: 100, opacity: 0}}
+          onClick={handleOpen}
+           className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
+          <a href="#reviews">Review</a>
+         </motion.div>
+         <motion.div
+          initial={{x:100, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          exit={{x: 100, opacity: 0}}
+          onClick={handleOpen}
+           className=" bg-orange-600 flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl  mb-2">
+          <a href="#footer" >Contact</a>
+          </motion.div>
+        </motion.div>
       )}
+      </AnimatePresence>
 
     </div>
   )
