@@ -33,7 +33,7 @@ function Header() {
           }
         });
       },
-      { threshold: 0.4 } // 40% visible triggers active
+      { threshold: 0.4 }
     );
 
     sections.forEach((section) => {
