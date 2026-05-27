@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <div className=" sticky top-0 z-50 h-16 bg-slate-800 px-10 flex justify-between items-center py-5">
-      <h1 className="font-bold">MLST.</h1>
+      <h1 className="font-bold lg:text-[24px] md:text-[20px]">MLST.</h1>
 
       <button className="md:hidden lg:hidden" onClick={handleOpen}>
         <img
@@ -23,7 +23,7 @@ function Header() {
         />
       </button>
 
-      <div className="hidden md:flex lg:flex gap-10 font-bold">
+      <div className="hidden md:flex lg:flex lg:gap-20 lg:text-[20px] md:text-[16px] gap-10 font-bold">
         <a
           className={`relative inline-block hover:before:content-[''] hover:before:absolute hover:before:-inset-2
           hover:before:bg-orange-500 hover:before:filter hover:before:blur-xl hover:text-orange-600 hover:before:-z-10
