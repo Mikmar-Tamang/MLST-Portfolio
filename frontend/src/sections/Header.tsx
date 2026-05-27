@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("");
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
