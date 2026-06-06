@@ -2,7 +2,7 @@
 
 function About() {
   return (
-    <section id="about" className="min-h-screen py-16 px-5">
+    <section id="about" className="min-h-screen py-16 px-5 lg:px-20 max-w-6xl mx-auto">
       <h1 className="text-2xl font-bold mb-4 text-center">About Me</h1>
       <p className="text-gray-500 mb-6">
        I'm a MERN stack developer with a strong foundation in modern web technologies 
