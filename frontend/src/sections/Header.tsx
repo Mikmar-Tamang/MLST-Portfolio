@@ -110,7 +110,9 @@ function Header() {
                 className="bg-orange-600 md:hidden lg:hidden flex items-center justify-center hover:bg-orange-700 h-10 w-full rounded-2xl mb-2 cursor-pointer"
               >
                 <span className="w-full text-center">
-                  {section === "hero" ? "Home" : section.charAt(0).toUpperCase() + section.slice(1)}
+                  {section === "hero" ? "Home" :
+                   section === "footer" ? "Contact" :
+                  section.charAt(0).toUpperCase() + section.slice(1)}
                 </span>
               </motion.div>
             ))}
