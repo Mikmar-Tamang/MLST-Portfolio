@@ -5,9 +5,6 @@ import type { ApiResponse } from '../type/types';
 const api: AxiosInstance = axios.create({
   baseURL: `${import.meta.env.VITE_API_URL}/api`,
   withCredentials: true,
-  headers: {
-    'Content-Type': 'application/json',
-  },
 });
 
 export const googleLogin = async (token: string): Promise<ApiResponse> => {
