@@ -19,8 +19,8 @@ declare global {
             theme: string;
             size: string;
             text: string;
-            shape: string;
             width: string;
+            shape: string;
           }) => void;
           cancel: () => void;
         };

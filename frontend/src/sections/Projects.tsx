@@ -1,6 +1,6 @@
 import foodWagon from '../assets/images/foodWagon.png'
 
-function Projects() {
+function Projects(): React.ReactElement {
   return (
     <section id="projects" className="px-5 py-16 min-h-screen">
       <h1 className="text-2xl lg:text-[38px] font-bold mb-4 text-center">Projects</h1>

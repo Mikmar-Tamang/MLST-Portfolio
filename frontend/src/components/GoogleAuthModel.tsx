@@ -36,7 +36,7 @@ const GoogleAuthModal = ({ isOpen, onClose, onSuccess }: GoogleAuthModalProps): 
         {/* Modal content - prevent click from closing */}
         <div 
           className="bg-white rounded-2xl shadow-2xl max-w-md w-full pointer-events-auto"
-          onClick={(e) => e.stopPropagation()}  // ← Prevents closing when clicking inside modal
+          onClick={(e:React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}  // ← Prevents closing when clicking inside modal
         >
           {/* Close button */}
           <div className="flex justify-end pt-4 pr-4">

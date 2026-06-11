@@ -21,7 +21,8 @@ const Comment = ({
 
  const commentOwnerId = comment.userId?._id?.toString();
   const loggedInUserId = currentUserId?.toString();
-  const isOwner = loggedInUserId && commentOwnerId && loggedInUserId === commentOwnerId;
+  // const isOwner = loggedInUserId && commentOwnerId && loggedInUserId === commentOwnerId;
+  const isOwner = loggedInUserId === commentOwnerId;
 
   // Only show buttons if owner
   const showButtons = isOwner;

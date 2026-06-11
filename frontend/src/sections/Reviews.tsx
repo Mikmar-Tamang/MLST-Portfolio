@@ -11,7 +11,6 @@ const Reviews = (): React.ReactElement => {
   const [commentText, setCommentText] = useState<string>('');
   const [submitting, setSubmitting] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [pendingComment, setPendingComment] = useState<string>('');
 
   const loadComments = async (isMounted: { current: boolean }): Promise<void> => {
     try {
@@ -46,39 +45,14 @@ const Reviews = (): React.ReactElement => {
         setUser(data.user);
         setIsModalOpen(false);
         
-        // If there was a pending comment, submit it
-        if (pendingComment.trim()) {
-          await submitCommentAfterLogin(pendingComment);
-          setPendingComment('');
-          setCommentText('');
-        }
       }
     } catch (error) {
       console.error('Login failed:', error);
     }
   };
 
-  const submitCommentAfterLogin = async (content: string): Promise<void> => {
-    setSubmitting(true);
-    try {
-      const data: ApiResponse = await createComment(content);
-      if (data.success && data.comment) {
-        setComments([data.comment, ...comments]);
-      }
-    } catch (error) {
-      console.error('Submit failed:', error);
-      alert('Failed to post comment');
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
   const handleCommentClick = (): void => {
     if (!user) {
-      // Store the current comment text before showing modal
-      if (commentText.trim()) {
-        setPendingComment(commentText);
-      }
       setIsModalOpen(true);
     }
   };
@@ -92,7 +66,6 @@ const Reviews = (): React.ReactElement => {
     }
     
     if (!user) {
-      setPendingComment(commentText);
       setIsModalOpen(true);
       return;
     }
@@ -114,7 +87,7 @@ const Reviews = (): React.ReactElement => {
 
   const handleCommentDeleted = (commentId: string): void => {
     setComments(comments.filter((c: CommentData) => c._id !== commentId));
-  };
+  };  
 
   const handleCommentUpdated = (commentId: string, newContent: string): void => {
     setComments(comments.map((c: CommentData) => 
@@ -132,7 +105,7 @@ const Reviews = (): React.ReactElement => {
 
     init();
 
-    return () => {
+    return () => { 
       isMounted.current = false;
     };
   }, []);
@@ -204,7 +177,6 @@ const Reviews = (): React.ReactElement => {
           isOpen={isModalOpen}
           onClose={() => {
             setIsModalOpen(false);
-            setPendingComment('');
           }}
           onSuccess={handleGoogleSuccess}
         />
